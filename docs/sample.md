@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# 다큐사우로스 너무 쉬워요
+# 다큐사우로스 쉬워요
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
