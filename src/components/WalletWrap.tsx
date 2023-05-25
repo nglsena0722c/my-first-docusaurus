@@ -10,6 +10,11 @@ const WalletWrap = ({ children }: PropsWithChildren) => {
   const [chainOptions, setChainoptions] =
     useState<WalletControllerChainOptions>();
 
+    const [windowUndefined, setWindowUndefined] = useState<boolean>(true);
+    useEffect(() => {
+      setWindowUndefined(typeof window === 'undefined');
+    }, []);
+
   useEffect(() => {
     getChainOptions()
       .then((c) => setChainoptions(c))
@@ -18,7 +23,12 @@ const WalletWrap = ({ children }: PropsWithChildren) => {
       });
   }, []);
 
-  return <WalletProvider {...chainOptions}>{children}</WalletProvider>;
+  return (
+    windowUndefined ? <>
+    </>
+    :
+   <WalletProvider {...chainOptions}>{children}</WalletProvider>
+  )
 };
 
 export default WalletWrap;
