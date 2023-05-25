@@ -6,6 +6,8 @@ sidebar_position: 7
 
 Let's discover **Youtube**.
 
+import Connect from "../src/components/Connect";
+import WalletWrap from "../src/components/WalletWrap";
 import YouTube from 'react-youtube';
 const opts = {
   height: '390',
@@ -17,3 +19,6 @@ const opts = {
 };
 
 <YouTube videoId="a2h__JE-Ydc" opts={opts} />
+<WalletWrap>
+<Connect />
+</WalletWrap>

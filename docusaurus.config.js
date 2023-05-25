@@ -133,6 +133,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: ['docusaurus-node-polyfills']
 };
 
 module.exports = config;

@@ -28,3 +28,15 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.buttonContainer {
+  background-color: white;
+  cursor : pointer;
+  border-radius: 24px;
+  border : 1px solid black;
+  padding : 8px;
+}
+
+.connectwallet {
+  color : black;
+}
