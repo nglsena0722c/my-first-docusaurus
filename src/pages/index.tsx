@@ -48,7 +48,6 @@ function HomepageHeader() {
               Docusaurus Tutorial - 5min ⏱️
             </Link>
           </div>
-<ConnectWallet />
           <div
             className="block cursor-pointer rounded-lg border bg-white p-2 text-sm shadow hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-neutral-700 md:p-4"
           >
