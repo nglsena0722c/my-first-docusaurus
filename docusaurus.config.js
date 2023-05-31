@@ -1,3 +1,4 @@
+// 번역 참고 : https://velog.io/@dlruddms5619/Docusaurus-%EB%8B%A4%EA%B5%AD%EC%96%B4-%EC%98%81%EC%96%B4%ED%95%9C%EA%B8%80-%EB%B2%84%EC%A0%84-%EC%B2%98%EB%A6%AC
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
@@ -28,7 +29,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', "ko-kr"],
   },
 
   presets: [
@@ -84,6 +85,10 @@ const config = {
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],

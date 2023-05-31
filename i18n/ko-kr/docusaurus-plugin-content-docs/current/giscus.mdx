@@ -1,11 +1,9 @@
 ---
-sidebar_position: 2
+sidebar_position: 11
 ---
 
-# 리액트(JS or Ts)로도 글을 쓸 수 있어요
+# 댓글 (Giscus)
 
-
-import Translate, {translate} from '@docusaurus/Translate';
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -22,4 +20,15 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-This is <Highlight color="#25c2a0"><h1><Translate>Let's translate React</Translate></h1></Highlight> !
+This is <Highlight color="#25c2a0">아래는 댓글창입니다</Highlight> !
+
+
+
+
+Docusaurus 측은 디스코드와 레딧을 통해 유저들과 소통하고 있습니다.
+
+https://docusaurus.io/ko/community/support
+
+import GiscusComponent from "../../../../src/components/Giscus";
+
+<GiscusComponent />
