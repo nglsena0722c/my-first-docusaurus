@@ -1,5 +1,6 @@
 import { useWallet, WalletStatus } from "@xpla/wallet-provider";
 import React from "react";
+import Translate, {translate} from '@docusaurus/Translate';
 export default function Connect() {
   const {
     status,
@@ -23,7 +24,7 @@ export default function Connect() {
   >
     <div className="connectwallet">
       {status === WalletStatus.WALLET_NOT_CONNECTED ? (
-        'Connect Wallet'
+        <Translate id="ddd">'Connect Wallet'sss</Translate>
       ) : wallets.length == 0 ? (
         'Loading...'
       ) : (
