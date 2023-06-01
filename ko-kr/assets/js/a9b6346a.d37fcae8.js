@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_first_docusaurus=self.webpackChunkmy_first_docusaurus||[]).push([[3551],{5780:s=>{s.exports=JSON.parse('{"label":"greetings","permalink":"/my-first-docusaurus/ko-kr/blog/tags/greetings","allTagsPath":"/my-first-docusaurus/ko-kr/blog/tags","count":1}')}}]);
