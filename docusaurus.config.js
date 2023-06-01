@@ -31,7 +31,18 @@ const config = {
     defaultLocale: 'en',
     locales: ['en', "ko-kr"],
   },
-
+  scripts: [
+    // {
+    //   src: '/my-first-docusaurus/img/hi.js',
+    //   async: true,
+    //   defer: true,
+    // },
+    // {
+    //   src: '/my-first-docusaurus/hi.js',
+    //   async: true,
+    //   defer: true,
+    // },
+  ],
   presets: [
     [
       'classic',
