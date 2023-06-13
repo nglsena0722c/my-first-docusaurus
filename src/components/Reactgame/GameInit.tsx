@@ -10,7 +10,7 @@ export function GameInit({
       <h1>Kiting</h1>
       <button onClick={() => setGameState("play")}>start</button>
       <button onClick={() => setGameState("nft")}>start with contract</button>
-      <button>how to play</button>
+      {/* <button>how to play</button> */}
       <span>Sample token id : kiting_1, kiting_2 (default is kiting_1)</span>
       <span>
         upload your token to contract

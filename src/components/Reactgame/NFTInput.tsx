@@ -112,6 +112,13 @@ export function NFTInput({
         onChange={(e) => setTokenId(e.target.value)}
       />
       <button onClick={clickPlay}>play</button>
+      <button
+        onClick={() => {
+          setGameState("init");
+        }}
+      >
+        back to home
+      </button>
       {error && <span style={{ color: "red" }}>{error}</span>}
     </div>
   );
