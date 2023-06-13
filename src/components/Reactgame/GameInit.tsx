@@ -29,6 +29,21 @@ export function GameInit({
         score store contract :
         xpla1tezzytqrqwxevj3pvcxk7tdljez0g835wk9msuc8nssukl7k4e3s73tadc
       </span>
+      <span>
+        you can get score information with query {
+          `{
+            "get_score" : {
+                "index" : \${your index}
+            }
+        }`
+        } or {
+          `{
+            "get_scores" : {
+            }
+        }`
+        }
+
+      </span>
     </>
   );
 }
