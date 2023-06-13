@@ -58,38 +58,30 @@ export default function Reactgame() {
           pointerColor: gamedatas.filter(
             (v) => v.trait_type === "pointerColor"
           )[0].value,
-          playerVelocity: parseInt(
-            gamedatas.filter((v) => v.trait_type === "playerVelocity")[0].value,
-            10
+          playerVelocity: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "playerVelocity")[0].value
           ),
-          enemyVelocity: parseInt(
-            gamedatas.filter((v) => v.trait_type === "enemyVelocity")[0].value,
-            10
+          enemyVelocity: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "enemyVelocity")[0].value
           ),
-          increaseEnemyVelocity: parseInt(
+          increaseEnemyVelocity: parseFloat(
             gamedatas.filter((v) => v.trait_type === "increaseEnemyVelocity")[0]
-              .value,
-            10
+              .value
           ),
-          attackVelocity: parseInt(
-            gamedatas.filter((v) => v.trait_type === "attackVelocity")[0].value,
-            10
+          attackVelocity: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "attackVelocity")[0].value
           ),
-          radius: parseInt(
-            gamedatas.filter((v) => v.trait_type === "radius")[0].value,
-            10
+          radius: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "radius")[0].value
           ),
-          attackWidth: parseInt(
-            gamedatas.filter((v) => v.trait_type === "attackWidth")[0].value,
-            10
+          attackWidth: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "attackWidth")[0].value
           ),
-          attackHeight: parseInt(
-            gamedatas.filter((v) => v.trait_type === "attackHeight")[0].value,
-            10
+          attackHeight: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "attackHeight")[0].value
           ),
-          enemyHp: parseInt(
-            gamedatas.filter((v) => v.trait_type === "enemyHp")[0].value,
-            10
+          enemyHp: parseFloat(
+            gamedatas.filter((v) => v.trait_type === "enemyHp")[0].value
           ),
         });
       })();
@@ -104,10 +96,9 @@ export default function Reactgame() {
       {gameState === "play" && (
         <GamePlay setGameState={setGameState} gamedata={gamedata} />
       )}
-      {gameState === "nft" && <NFTInput
-      setGameState={setGameState}
-      setGamedata={setGamedata}
-      />}
+      {gameState === "nft" && (
+        <NFTInput setGameState={setGameState} setGamedata={setGamedata} />
+      )}
     </GameContainer>
   );
 }
